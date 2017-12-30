@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>Detail </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+
+    <img src="{{image.webformatURL}}"/>
+
+    <ion-card-content>
+      <ion-card-title>
+        User : {{image.user}}
+      </ion-card-title>
+      <p>
+        {{image.tags}}
+      </p>
+    </ion-card-content>
+
+
+
+    <ion-item>
+      <ion-icon name='logo-twitter' item-start style="color: #55acee"></ion-icon>
+      Followers
+      <ion-badge item-end>{{image.favorites}}</ion-badge>
+    </ion-item>
+
+  </ion-card>
+
+</ion-content>
